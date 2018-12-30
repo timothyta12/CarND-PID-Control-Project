@@ -45,7 +45,7 @@ public:
   /*
   * Calculate the output value
   */
-  double CacluateValue(double cte);
+  double CalculateValue(double cte);
   
 private:
   double cte_prev;

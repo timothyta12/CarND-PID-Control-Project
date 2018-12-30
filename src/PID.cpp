@@ -25,6 +25,6 @@ void PID::UpdateError(double cte) {
 double PID::TotalError() {
 }
 
-double PID::CalculateValue(double cte) [
+double PID::CalculateValue(double cte) {
 }
 
