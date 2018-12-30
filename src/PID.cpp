@@ -26,5 +26,9 @@ double PID::TotalError() {
 }
 
 double PID::CalculateValue(double cte) {
+  double diff_cte = cte - cte_prev;
+  cte_prev = cte;
+  cte_total += cte;
+  return -Kp * cte - Kd * diff_cte - Ki * cte_total;
 }
 
